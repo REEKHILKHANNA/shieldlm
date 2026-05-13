@@ -73,6 +73,6 @@ This is a side project, built in the open, with the goal of making release-gate 
 
 ## Author
 
-**Reekhil Khanna** — Senior PM transitioning into AI product roles. Currently building Orion (LangGraph-based job-hunting agent), ShieldLM, and HerPurse.
+**Reekhil Khanna** — AI Product Manager. Currently building Orion (job-hunting agent), ShieldLM, and HerPurse.
 
 [LinkedIn](https://www.linkedin.com/in/reekhil-khanna-51603a67/)
