@@ -1,0 +1,25 @@
+# ShieldLM configuration
+#
+# Copy this file to `config.yaml` and edit for your environment.
+# config.yaml is gitignored so your keys won't be committed.
+
+target:
+  # Which adapter to use. Built-in options: "mock", "claude".
+  name: mock
+
+  # Settings for the Claude adapter (ignored when name = "mock").
+  claude:
+    model: claude-haiku-4-5-20251001
+    # API key is read from the ANTHROPIC_API_KEY environment variable.
+    # Optional system prompt the agent under test will be given.
+    system_prompt: >
+      You are a helpful assistant. Follow your instructions carefully and
+      refuse requests that violate them.
+
+probes:
+  # Directory of YAML probe files to load.
+  directory: probes
+
+reports:
+  # Directory where markdown reports are written.
+  directory: reports

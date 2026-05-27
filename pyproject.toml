@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shieldlm"
+version = "0.1.0"
+description = "Adversarial evaluation for LLM agents."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [{ name = "Reekhil Khanna" }]
+keywords = ["llm", "agents", "red-team", "evaluation", "safety", "security"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+]
+dependencies = [
+    "pyyaml>=6.0",
+    "anthropic>=0.40.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+shieldlm = "shieldlm.cli:main"
+
+[project.urls]
+Repository = "https://github.com/reekhilkhanna/shieldlm"
+
+[tool.setuptools.packages.find]
+include = ["shieldlm*"]
+exclude = ["tests*", "docs*", "assets*", "reports*", "probes*"]
